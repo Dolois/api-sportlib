@@ -1,6 +1,6 @@
-# Enigma
+# Sportlib
 
-est un Escape Game en ligne.
+is an Api rest.
 
 Il permet à un utilisateur joueur de s'inscrire et de s'authentifier.
 Il pourra y retouver son score moyen ainsi que ses 5 meilleures performances
