@@ -1,18 +1,21 @@
-# Sportlib
+Sportlib
 
 is an Api rest.
 
-Il permet à un utilisateur joueur de s'inscrire et de s'authentifier.
-Il pourra y retouver son score moyen ainsi que ses 5 meilleures performances
-suite à sa connection.
+It allows a lambda user to list the sports venues and their activities of a chosen city.
+This person will be able to put an opinion on the sports establishment.
+It must first be registered and authenticated.
 
-Le but du jeu est de se déplacer par des clics (gauche, droit, arrière) 
-de pièce en pièce en y trouvant le(s) indice(s) par pièce dans un laps de
-temps.
+It allows an external manager to create a sports venue or to create a sport activity (s).
+It must first be registered and authenticated.
 
-Des textes d'information pourront vous aidez a trouver les indices des différentes pièces.  
+It allows an internal administrator to update the site.
+It must first be registered and authenticated.
 
-Nous avons une base de données MySQL nommée Enigma avec ses tables Person, Pièce et Score.  
+In a following version:
+the average user can book and / or cancel a reservation.
+The internal manager may cancel reservations at his sports facility.
+The internal administrator will be able to output statistics.
 
 ## Installation
 
