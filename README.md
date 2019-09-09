@@ -20,24 +20,25 @@ The internal administrator will be able to output statistics.
 ## Installation
 
 <strong>Back-end :</strong>  
-IDE IntelliJ                        (est un environnement de développement intégré de technologie Java)  
-Java jdk 1.8                        (ensemble de bibliothèques logicielles de base du langage de programmation Java)  
-Apache Maven 3.5.4                  (permet de compiler et de déployer des applications Java)  
-MySQL Workbench 8.0                 (est un logiciel de gestion et d'administration de bases de données  
+IntelliJ IDE (is an integrated Java technology development environment)
+Java jdk 1.8 (set of basic software libraries of the Java programming language)
+Apache Maven 3.5.4 (allows you to compile and deploy Java applications)
+MySQL Workbench 8.0 (is a database management and administration software 
 
 <strong>Front-end :</strong>  
-Vue CLI 3                           (est un framework permettant de construire des applications web simples)  
+CLI View 3 (is a framework for building simple web applications)
 
 ## Usage  
 
-<strong>Lancer la partie back-end :</strong>  
-du terminal de l'IDE > cd Enigma/Backend  
-du terminal de l'IDE > mvn package -Dmaven.test.skip=true   (maven compile votre projet Enigma en générant un fichier jar)  
-du terminal de l'IDE > cd target  
-du terminal de l'IDE > java -jar enigma-0.0.1-SNAPSHOT.jar  (execute votre projet en mode console)   
+<strong>Start the back-end :</strong>  
+Of the IDE terminal> cd Sportlib / Backend
+Of the IDE terminal> mvn package -Dmaven.test.skip = true (maven compiles your Sportlib project by generating a jar file)
+Of the IDE terminal> cd target
+Of the IDE terminal> java -jar enigma-0.0.1-SNAPSHOT.jar (execute your project in console mode) 
 
-<strong>Lancer la partie front-end :</strong>  
-du terminal de l'IDE > cd Enigma/Front/enigma  
-du terminal de l'IDE > npm install              (installe toutes les dependences imbriqué sur le package.json)  
-du terminal de l'IDE > npm run serve            (lance votre projet localement)  
-Navigateur >  http://localhost:8080/  
+<strong>Start the front-end :</strong>  
+Of the IDE terminal> cd Sportib / Front / sportlib
+Of the IDE> npm install terminal (installs all dependencies nested on the package.json)
+Of the IDE terminal> npm run serve (start your project locally)
+
+Navigator>  http://localhost:8080/  
