@@ -18,7 +18,6 @@ target/
 *.iws
 *.iml
 *.ipr
-/sportlib_Front/node_modules/
 
 ### NetBeans ###
 /nbproject/private/
