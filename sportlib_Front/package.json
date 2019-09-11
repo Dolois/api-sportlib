@@ -1,0 +1,14 @@
+{
+  "name": "sportlib",
+  "version": "1.0.0",
+  "description": "Environnement de developpement du Front",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html"
+  },
+  "author": "Dominick Loisel",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}
