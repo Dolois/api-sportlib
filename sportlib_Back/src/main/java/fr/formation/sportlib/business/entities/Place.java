@@ -1,21 +1,31 @@
 package fr.formation.sportlib.business.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.hibernate.annotations.CreationTimestamp;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
+@Table(name="t_place")
+@EntityListeners(value = AuditingEntityListener.class)
+@JsonIgnoreProperties(value = {"createdAt", "updatedAt"}, allowGetters = true)
 public class Place extends AbstractEntity { // place herit of the class AbstractEntity
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     /** The place. */
     @Column(nullable = false, length = 100)
     private String place;
 
     /** The name. */
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false, length = 255)
     private String name;
 
     /** The address. */
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false, length = 255)
     private String address;
 
     /** The city. */
@@ -31,11 +41,12 @@ public class Place extends AbstractEntity { // place herit of the class Abstract
     private String phone;
 
     /** The image. */
-    @Column(nullable = false, length = 200)
+    @Column(nullable = false, length = 255)
     private String image;
 
     /** The date place. */
     @Column(nullable = false)
+    @CreationTimestamp
     private LocalDate datePlace;
 
     /**
@@ -43,111 +54,76 @@ public class Place extends AbstractEntity { // place herit of the class Abstract
      */
     public Place() {}
 
+    @Override
+    public Long getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getPlace() {
         return place;
     }
 
-    /**
-     * @param place
-     */
     public void setPlace(String place) {
         this.place = place;
     }
 
-    /**
-     * @return name
-     */
     public String getName() {
         return name;
     }
 
-    /**
-     * @param name
-     */
     public void setName(String name) {
         this.name = name;
     }
 
-    /**
-     * @return address
-     */
     public String getAddress() {
         return address;
     }
 
-    /**
-     * @param address
-     */
     public void setAddress(String address) {
         this.address = address;
     }
 
-    /**
-     * @return city
-     */
     public String getCity() {
         return city;
     }
 
-    /**
-     * @param city
-     */
     public void setCity(String city) {
         this.city = city;
     }
 
-    /**
-     * @return zipCode
-     */
     public String getZipCode() {
         return zipCode;
     }
 
-    /**
-     * @param zipCode
-     */
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
     }
 
-    /**
-     * @return phone
-     */
     public String getPhone() {
         return phone;
     }
 
-    /**
-     * @param phone
-     */
     public void setPhone(String phone) {
         this.phone = phone;
     }
 
-    /**
-     * @return image
-     */
     public String getImage() {
         return image;
     }
 
-    /**
-     * @param image
-     */
     public void setImage(String image) {
         this.image = image;
     }
 
-    /**
-     * @return datePLace
-     */
     public LocalDate getDatePlace() {
         return datePlace;
     }
 
-    /**
-     * @param datePlace
-     */
     public void setDatePlace(LocalDate datePlace) {
         this.datePlace = datePlace;
     }
