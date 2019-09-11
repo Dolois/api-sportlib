@@ -20,13 +20,13 @@ The internal administrator will be able to output statistics.
 ## Installation
 
 <strong>Back-end :</strong>  
-IntelliJ IDE (is an integrated Java technology development environment)
-Java jdk 1.8 (set of basic software libraries of the Java programming language)
-Apache Maven 3.5.4 (allows you to compile and deploy Java applications)
-MySQL Workbench 8.0 (is a database management and administration software 
+<b>IntelliJ IDE</b> (is an integrated Java technology development environment)    
+<b>Java jdk 1.8</b> (set of basic software libraries of the Java programming language)    
+<b>Apache Maven 3.5.4</b> (allows you to compile and deploy Java applications)    
+<b>MySQL Workbench 8.0</b> (is a database management and administration software   
 
 <strong>Front-end :</strong>  
-CLI View 3 (is a framework for building simple web applications)
+<b>React</b> (is a framework for building simple web applications)
 
 ## Usage  
 
