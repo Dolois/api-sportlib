@@ -5,16 +5,12 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 @Entity
 @Table(name="t_activity")
-@EntityListeners(value = AuditingEntityListener.class)
 @JsonIgnoreProperties(value = {"createdAt", "updatedAt"}, allowGetters = true)
-public class Activity {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class Activity extends AbstractEntity { // activity herit of the class AbstractEntity {
 
     @Column(nullable = false, length = 255)
     private String activity;
@@ -23,10 +19,10 @@ public class Activity {
     private String day;
 
     @Column(nullable = false)
-    private LocalDate startTime;
+    private LocalTime startTime;
 
     @Column(nullable = false)
-    private LocalDate endTime;
+    private LocalTime endTime;
 
     @Column(nullable = false)
     @CreationTimestamp
@@ -40,14 +36,6 @@ public class Activity {
      * Instantiates a new Activity.
      */
     public Activity() {}
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getActivity() {
         return activity;
@@ -65,19 +53,19 @@ public class Activity {
         this.day = day;
     }
 
-    public LocalDate getStartTime() {
+    public LocalTime getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(LocalDate startTime) {
+    public void setStartTime(LocalTime startTime) {
         this.startTime = startTime;
     }
 
-    public LocalDate getEndTime() {
+    public LocalTime getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(LocalDate endTime) {
+    public void setEndTime(LocalTime endTime) {
         this.endTime = endTime;
     }
 

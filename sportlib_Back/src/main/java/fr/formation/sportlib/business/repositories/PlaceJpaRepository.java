@@ -12,8 +12,10 @@ import java.util.List;
 @Repository
 public interface PlaceJpaRepository extends JpaRepository<Place, Long> {
 
-    PlaceViewDto getById(Long id);
-
+    // ProjectedBy est uniquement pour les Listes
     List<PlaceViewDto> getAllProjectedBy();
+
+    PlaceViewDto getOneById(Long id);
+
     // Page<PlaceViewDto> getAllProjectedBy(Pageable pageable);
 }

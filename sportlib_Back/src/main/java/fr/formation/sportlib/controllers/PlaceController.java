@@ -3,6 +3,7 @@ package fr.formation.sportlib.controllers;
 import fr.formation.sportlib.business.dtos.PlaceViewDto;
 import fr.formation.sportlib.services.PlaceService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,5 +22,10 @@ public class PlaceController {
     @GetMapping
     protected List<PlaceViewDto> getAll() {
         return service.getAll();
+    }
+
+    @GetMapping("/{id}")
+    protected PlaceViewDto getOneById(@PathVariable("id") Long id) {
+        return service.getOne(id);
     }
 }

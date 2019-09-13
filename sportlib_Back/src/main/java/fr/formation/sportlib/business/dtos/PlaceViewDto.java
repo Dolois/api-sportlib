@@ -1,5 +1,7 @@
 package fr.formation.sportlib.business.dtos;
 
+import java.time.LocalDate;
+
 public interface PlaceViewDto {
 
     Long getId();
@@ -8,4 +10,5 @@ public interface PlaceViewDto {
     String getAddress();
     String getCity();
     String getZipCode();
+    LocalDate getDatePlace();
 }

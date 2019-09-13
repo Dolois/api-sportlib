@@ -8,13 +8,8 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name="t_place")
-@EntityListeners(value = AuditingEntityListener.class)
 @JsonIgnoreProperties(value = {"createdAt", "updatedAt"}, allowGetters = true)
 public class Place extends AbstractEntity { // place herit of the class AbstractEntity
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
     /** The place. */
     @Column(nullable = false, length = 100)
@@ -53,16 +48,6 @@ public class Place extends AbstractEntity { // place herit of the class Abstract
      * Instantiates a new place.
      */
     public Place() {}
-
-    @Override
-    public Long getId() {
-        return id;
-    }
-
-    @Override
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getPlace() {
         return place;
@@ -121,6 +106,7 @@ public class Place extends AbstractEntity { // place herit of the class Abstract
     }
 
     public LocalDate getDatePlace() {
+
         return datePlace;
     }
 
