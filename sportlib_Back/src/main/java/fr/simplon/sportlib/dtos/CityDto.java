@@ -2,7 +2,7 @@ package fr.simplon.sportlib.dtos;
 
 import javax.persistence.Column;
 
-public class CiityDto {
+public class CityDto {
 
     /** zipCode. */
     @Column(nullable = false, length = 5)

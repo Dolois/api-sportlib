@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e34b440-492b-48aa-aa5b-433ec304aae8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/controllers/ActivityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/ActivityDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/ActivityViewDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/CityDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/CityViewDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/PlaceDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/PlaceViewDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/entities/AbstractEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/entities/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/entities/Place.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/repositories/ActivityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/repositories/CityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/services/AbstractService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/services/ActivityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/services/ActivityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/services/CityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/services/CityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/ResourceException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/SportlibApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/business/dtos/PlaceViewDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/business/entities/AbstractEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/business/entities/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/entities/Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/business/entities/Place.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/business/repositories/PlaceJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/repositories/PlaceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/controllers/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/controllers/PlaceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/services/AdminService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/services/AdminServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/services/PlaceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/services/PlaceServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fr/formation/sportlib/SportlibApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/simplon/sportlib/SportlibApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myAutoScrollToSource" value="true" />
+    <option name="myElementSize" value="302" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1QgfPOOLoakw1h2YGFtcTzDTbBr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/fr" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.testRunning" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="fr.simplon.sportlib.dtos" />
+      <recent name="fr.simplon.sportlib.repositories" />
+      <recent name="fr.simplon.sportlib.services" />
+      <recent name="fr.simplon.sportlib.entities" />
+      <recent name="fr.formation.sportlib.controllers" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="SportlibApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.simplon.sportlib.SportlibApplication" />
+      <module name="sportlib" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.simplon.sportlib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SportlibApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.formation.sportlib.SportlibApplication" />
+      <module name="sportlib" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.formation.sportlib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SportlibApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e34b440-492b-48aa-aa5b-433ec304aae8" name="Default Changelist" comment="" />
+      <created>1568197134787</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568197134787</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/sportlib$SportlibApplication.ic" NAME="SportlibApplication Coverage Results" MODIFIED="1569872888719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>fr.simplon.sportlib.*</FILTER>
+    </SUITE>
+  </component>
+</project>

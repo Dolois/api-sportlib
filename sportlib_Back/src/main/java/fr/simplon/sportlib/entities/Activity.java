@@ -3,14 +3,16 @@ package fr.simplon.sportlib.entities;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.CreationTimestamp;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
 @Entity
 @Table(name="t_activity")
 @JsonIgnoreProperties(value = {"createdAt", "updatedAt"}, allowGetters = true)
-public class Activité extends AbstractEntity { /** activity herit of the class AbstractEntity */
+public class Activity extends AbstractEntity {
 
     @Column(nullable = false, length = 255)
     private String activity;
@@ -36,7 +38,7 @@ public class Activité extends AbstractEntity { /** activity herit of the class 
     /**
      * Instantiates a new Activity.
      */
-    public Activité() {}
+    public Activity() {}
 
     public String getActivity() {
         return activity;

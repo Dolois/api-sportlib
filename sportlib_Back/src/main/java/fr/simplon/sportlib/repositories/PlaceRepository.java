@@ -2,18 +2,22 @@ package fr.simplon.sportlib.repositories;
 
 import fr.simplon.sportlib.dtos.PlaceViewDto;
 import fr.simplon.sportlib.entities.Place;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface PlaceJpaRepository extends JpaRepository<Place, Long> {
+public interface PlaceRepository extends JpaRepository<Place, Long> {
 
-    // ProjectedBy est uniquement pour les Listes
-    List<PlaceViewDto> getAllProjectedBy();
+    /** method signatures and arguments if present */
 
-    PlaceViewDto getOneById(Long id);
+    /** ProjectedBy est uniquement pour les Listes */
 
-    // Page<PlaceViewDto> getAllProjectedBy(Pageable pageable);
+    PlaceViewDto getById(Long id);
+    Page<PlaceViewDto> getAllProjectedBy(Pageable pageable);
+
+    List<PlaceViewDto> getAllPlacesBy();
 }

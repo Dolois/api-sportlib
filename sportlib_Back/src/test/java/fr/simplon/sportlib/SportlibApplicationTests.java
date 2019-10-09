@@ -1,4 +1,4 @@
-package fr.formation.sportlib;
+package fr.simplon.sportlib;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
