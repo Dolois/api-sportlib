@@ -1,9 +1,7 @@
-package fr.formation.sportlib.business.repositories;
+package fr.simplon.sportlib.repositories;
 
-import fr.formation.sportlib.business.dtos.PlaceViewDto;
-import fr.formation.sportlib.business.entities.Place;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+import fr.simplon.sportlib.dtos.PlaceViewDto;
+import fr.simplon.sportlib.entities.Place;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

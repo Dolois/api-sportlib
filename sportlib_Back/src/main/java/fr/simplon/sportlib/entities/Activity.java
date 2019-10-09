@@ -1,8 +1,8 @@
-package fr.formation.sportlib.business.entities;
+package fr.simplon.sportlib.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.CreationTimestamp;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -10,7 +10,7 @@ import java.time.LocalTime;
 @Entity
 @Table(name="t_activity")
 @JsonIgnoreProperties(value = {"createdAt", "updatedAt"}, allowGetters = true)
-public class Activity extends AbstractEntity { // activity herit of the class AbstractEntity {
+public class Activité extends AbstractEntity { /** activity herit of the class AbstractEntity */
 
     @Column(nullable = false, length = 255)
     private String activity;
@@ -28,14 +28,15 @@ public class Activity extends AbstractEntity { // activity herit of the class Ab
     @CreationTimestamp
     private LocalDate dateActivity;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(nullable = false)
-    private Place place;
+    /** @ManyToOne(fetch = FetchType.LAZY)
+      * @JoinColumn(name = "place_id")
+      * private Place place;
+     */
 
     /**
      * Instantiates a new Activity.
      */
-    public Activity() {}
+    public Activité() {}
 
     public String getActivity() {
         return activity;
@@ -77,11 +78,9 @@ public class Activity extends AbstractEntity { // activity herit of the class Ab
         this.dateActivity = dateActivity;
     }
 
-    public Place getPlace() {
-        return place;
-    }
-
-    public void setPlace(Place place) {
-        this.place = place;
-    }
+    /**
+      * public Place getPlace() { return place; }
+      *
+      * public void setPlace(Place place) { this.place = place; }
+     */
 }
