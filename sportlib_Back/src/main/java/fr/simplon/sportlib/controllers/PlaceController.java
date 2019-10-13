@@ -9,7 +9,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/places")
+@RequestMapping("/place")
 public class PlaceController {
 
     private final PlaceService service;

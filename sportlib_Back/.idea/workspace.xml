@@ -2,39 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e34b440-492b-48aa-aa5b-433ec304aae8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/controllers/ActivityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/ActivityDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/ActivityViewDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/CityDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/CityViewDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/PlaceDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/PlaceViewDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/entities/AbstractEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/entities/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/entities/Place.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/repositories/ActivityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/repositories/CityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/services/AbstractService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/services/ActivityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/services/ActivityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/services/CityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/services/CityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/ResourceException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/SportlibApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/business/dtos/PlaceViewDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/business/entities/AbstractEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/business/entities/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/entities/Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/business/entities/Place.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/business/repositories/PlaceJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/repositories/PlaceRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/controllers/AdminController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/controllers/PlaceController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/services/AdminService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/services/AdminServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/services/PlaceService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/formation/sportlib/services/PlaceServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sportlib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sportlib.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/controllers/ActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/controllers/ActivityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/controllers/PlaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/controllers/PlaceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/ActivityDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/ActivityDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/CityDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/CityViewDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/PlaceDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/PlaceDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/PlaceViewDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/dtos/PlaceViewDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/entities/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/entities/Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/entities/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/entities/Place.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/repositories/CityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/repositories/CityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/repositories/PlaceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/repositories/PlaceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/services/CityServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/services/PlaceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/simplon/sportlib/services/PlaceServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fr/formation/sportlib/SportlibApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/simplon/sportlib/SportlibApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fr/simplon/sportlib/SportlibApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/sportlib.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/controllers/ActivityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/controllers/ActivityController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/controllers/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/controllers/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/controllers/PlaceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/controllers/PlaceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/dtos/ActivityDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/dtos/ActivityDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/dtos/CityDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/dtos/CityViewDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/dtos/PlaceDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/dtos/PlaceDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/dtos/PlaceViewDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/dtos/PlaceViewDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/entities/Activity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/entities/Activity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/entities/Place.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/entities/Place.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/repositories/CityRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/repositories/CityRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/services/CityServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/services/PlaceServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/simplon/sportlib/services/PlaceServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/sportlib.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/simplon/sportlib/SportlibApplicationTests.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,8 +77,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -63,6 +88,7 @@
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
@@ -76,8 +102,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="fr.simplon.sportlib.dtos" />
       <recent name="fr.simplon.sportlib.repositories" />
+      <recent name="fr.simplon.sportlib.dtos" />
       <recent name="fr.simplon.sportlib.services" />
       <recent name="fr.simplon.sportlib.entities" />
       <recent name="fr.formation.sportlib.controllers" />

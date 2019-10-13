@@ -2,14 +2,12 @@ package fr.simplon.sportlib.services;
 
 import fr.simplon.sportlib.dtos.PlaceDto;
 import fr.simplon.sportlib.dtos.PlaceViewDto;
-import fr.simplon.sportlib.entities.Place;
 import fr.simplon.sportlib.entities.City;
+import fr.simplon.sportlib.entities.Place;
 import fr.simplon.sportlib.repositories.CityRepository;
 import fr.simplon.sportlib.repositories.PlaceRepository;
-import org.springframework.cache.annotation.Cacheable;
-import org.springframework.stereotype.Service;
-
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -55,8 +53,7 @@ public class PlaceServiceImpl extends AbstractService implements PlaceService, C
     }
 
     @Override
-    @Cacheable("cities")  // la liste des villes est chargee dans le cache villes
     public List<City> getAllCities() {
-        return cityRepository.findAll ();
+        return cityRepository.findAll();
     }
 }

@@ -20,4 +20,10 @@ public interface PlaceRepository extends JpaRepository<Place, Long> {
     Page<PlaceViewDto> getAllProjectedBy(Pageable pageable);
 
     List<PlaceViewDto> getAllPlacesBy();
+
+    /** jpquery
+    @Query("select new fr.simplon.sportlib.dtos.PlaceDto"
+            + "(p.place, p.name, p.address, p.city) " + "from Place p")
+    Page<PlaceDto> list(Pageable pageable);
+    */
 }

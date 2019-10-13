@@ -9,7 +9,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/activities")
+@RequestMapping("/activity")
 public class ActivityController {
 
     private final ActivityService service;

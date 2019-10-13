@@ -36,6 +36,20 @@ public class PlaceDto {
     @Column(nullable = false)
     private String overture;
 
+    public PlaceDto() {}
+
+    public PlaceDto(String place, String name, String address, String city,
+                    String zipCode, String phone, String image, String overture) {
+        this.place = place;
+        this.name = name;
+        this.address = address;
+        this.city = city;
+        this.zipCode = zipCode;
+        this.phone = phone;
+        this.image = image;
+        this.overture = overture;
+    }
+
     public String getPlace() {
         return place;
     }

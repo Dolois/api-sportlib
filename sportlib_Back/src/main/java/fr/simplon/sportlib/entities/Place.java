@@ -50,11 +50,6 @@ public class Place extends AbstractEntity {
     @CreationTimestamp
     private LocalDate datePlace;
 
-    /** The activities. */
-    /** @OneToMany(mappedBy = "t_activity") */
-
-    /** private List<Activity> activities; */
-
     /**
      * Instantiates a new place.
      */
@@ -131,13 +126,4 @@ public class Place extends AbstractEntity {
     public void setDatePlace(LocalDate datePlace) {
         this.datePlace = datePlace;
     }
-
-    /** public List<Activity> getActivities() {
-        return activities;
-    }
-
-    public void setActivities(List<Activity> activities) {
-        this.activities = activities;
-    }
-     */
 }

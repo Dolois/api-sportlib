@@ -9,5 +9,7 @@ public interface PlaceViewDto {
     String getAddress();
     String getCity();
     String getZipCode();
+    String getPhone();
+    String getImage();
     LocalDate getDatePlace();
 }

@@ -1,9 +1,10 @@
 package fr.simplon.sportlib.dtos;
 
 import javax.persistence.Column;
-import java.time.LocalTime;
 
 public class ActivityDto {
+
+    private Long id;
 
     @Column(nullable = false, length = 255)
     private String activity;
@@ -11,11 +12,21 @@ public class ActivityDto {
     @Column(nullable = false, length = 10)
     private String day;
 
-    @Column(nullable = false)
-    private LocalTime startTime;
+    @Column(nullable = false, length = 5)
+    private String startTime;
 
-    @Column(nullable = false)
-    private LocalTime endTime;
+    @Column(nullable = false, length = 5)
+    private String endTime;
+
+    public ActivityDto() {}
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getActivity() {
         return activity;
@@ -33,19 +44,19 @@ public class ActivityDto {
         this.day = day;
     }
 
-    public LocalTime getStartTime() {
+    public String getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(LocalTime startTime) {
+    public void setStartTime(String startTime) {
         this.startTime = startTime;
     }
 
-    public LocalTime getEndTime() {
+    public String getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(LocalTime endTime) {
+    public void setEndTime(String endTime) {
         this.endTime = endTime;
     }
 }

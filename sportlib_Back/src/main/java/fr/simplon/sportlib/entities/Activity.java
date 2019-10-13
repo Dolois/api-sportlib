@@ -3,11 +3,8 @@ package fr.simplon.sportlib.entities;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.CreationTimestamp;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDate;
-import java.time.LocalTime;
 
 @Entity
 @Table(name="t_activity")
@@ -20,20 +17,19 @@ public class Activity extends AbstractEntity {
     @Column(nullable = false, length = 10)
     private String day;
 
-    @Column(nullable = false)
-    private LocalTime startTime;
+    @Column(nullable = false, length = 5)
+    private String startTime;
 
-    @Column(nullable = false)
-    private LocalTime endTime;
+    @Column(nullable = false, length = 5)
+    private String endTime;
 
     @Column(nullable = false)
     @CreationTimestamp
     private LocalDate dateActivity;
 
-    /** @ManyToOne(fetch = FetchType.LAZY)
-      * @JoinColumn(name = "place_id")
-      * private Place place;
-     */
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "place_id")
+    private Place place;
 
     /**
      * Instantiates a new Activity.
@@ -56,19 +52,19 @@ public class Activity extends AbstractEntity {
         this.day = day;
     }
 
-    public LocalTime getStartTime() {
+    public String getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(LocalTime startTime) {
+    public void setStartTime(String startTime) {
         this.startTime = startTime;
     }
 
-    public LocalTime getEndTime() {
+    public String getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(LocalTime endTime) {
+    public void setEndTime(String endTime) {
         this.endTime = endTime;
     }
 
@@ -80,9 +76,7 @@ public class Activity extends AbstractEntity {
         this.dateActivity = dateActivity;
     }
 
-    /**
-      * public Place getPlace() { return place; }
-      *
-      * public void setPlace(Place place) { this.place = place; }
-     */
+    public Place getPlace() { return place; }
+
+    public void setPlace(Place place) { this.place = place; }
 }

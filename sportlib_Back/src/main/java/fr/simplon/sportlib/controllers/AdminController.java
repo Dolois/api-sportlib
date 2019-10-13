@@ -16,9 +16,9 @@ public class AdminController {
         this.service = service;
     }
 
-    @DeleteMapping("/city/{zipCode}")
-    protected void clearCacheCity(@PathVariable("zipCode") String zipCode) {
-        service.clearCacheCity(zipCode);
+    @DeleteMapping("/cache/{city}")
+    protected void clearCacheCity(@PathVariable("city") String city) {
+        service.clearCacheCity(city);
     }
 
     @DeleteMapping("/cities")
