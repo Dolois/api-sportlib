@@ -6,16 +6,30 @@
   "scripts": {
     "start": "parcel ./src/index.html"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dolois/api-sportlib.git"
+  },
   "author": "Dominick Loisel",
   "license": "ISC",
-  "dependencies": {
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-router": "^5.1.2",
-    "react-router-dom": "^5.1.2"
+  "bugs": {
+    "url": "https://github.com/Dolois/api-sportlib/issues"
   },
+  "homepage": "https://github.com/Dolois/api-sportlib#readme",
   "devDependencies": {
+    "@types/enzyme": "^3.10.3",
+    "@types/jest": "^24.0.22",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "jest": "^24.9.0",
+    "less": "^3.10.3",
     "parcel-bundler": "^1.12.4",
-    "typescript": "^3.6.4"
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-test-renderer": "^16.11.0",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "react-router-dom": "^5.1.2"
   }
 }
