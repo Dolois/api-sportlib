@@ -57,7 +57,7 @@ root
 Structure du JS 
 
 src/js/components/ (dumb component)  
-Des composants normalement simples pages/ (HOC High order component) 
+Des composants normalement simples pages/ (HOC High order component)  
 Des composants parents qui vont souvent appeler d'autre composants.  
 Ces composants auront très souvent de la logique  
 
