@@ -14,7 +14,7 @@ Front best practices :
 
 ### For developement
 
-Get Node.js for your platform (https://nodejs.org/en/)
+Get Node.js for your platform (https://nodejs.org/en/)  
 Node is required only to build the project. It is not required to run it.
 
 1. `npm install`
