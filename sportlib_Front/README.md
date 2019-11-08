@@ -1,14 +1,14 @@
 # sportlib-front
 
 Front best practices :
-  Typescript  
-  jest  
-  enzyme  
-  parcel  
-  react router  
-  fetch  
-  less  
-  build -> dev / prod
+  - Typescript  
+  - jest  
+  - enzyme  
+  - parcel  
+  - react router  
+  - fetch  
+  - less  
+  - build -> dev / prod
 
 ## How to build
 
@@ -27,14 +27,14 @@ Node is required only to build the project. It is not required to run it.
 
 # Architecture du front
 
-root
+root  
       ├── package.json 
       ├── package-lock.json 
-      ├── node_modules
-      ├── src (localhost:1234)
-      │   └── index.js
-      ├── .gitignore
-      └── README.md
+      ├── node_modules  
+      ├── src (localhost:1234)  
+      │   └── index.js  
+      ├── .gitignore  
+      └── README.md  
 
 1. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
