@@ -50,7 +50,7 @@ root
 
 -----------------------------------------------------------------------
 
-- Initialization of a javascript project is done by typing the command ### npm init  
+- Initialization of a javascript project is done by typing the command **`npm init`**  
 
 -----------------------------------------------------------------------
 
