@@ -32,7 +32,7 @@ root
       ├── package-lock.json  
       ├── node_modules  
       ├── src (localhost:1234)  
-      │   └── index.js  
+      │     └── index.js  
       ├── .gitignore  
       └── README.md  
 
