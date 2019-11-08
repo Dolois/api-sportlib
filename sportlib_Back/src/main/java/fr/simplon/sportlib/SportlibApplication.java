@@ -25,9 +25,17 @@ public class SportlibApplication {
 	public CacheManager createSimpleCacheManager() {
 		SimpleCacheManager simpleCacheManager = new SimpleCacheManager();
 		List<Cache> caches = new ArrayList<>();
-		caches.add(new ConcurrentMapCache("cities"));
+		caches.add(new ConcurrentMapCache("structures"));
 		simpleCacheManager.setCaches(caches);
 		return simpleCacheManager;
+	}
+
+	@Bean
+	protected LocalValidatorFactoryBean validator(MessageSource messageSource) {
+		// messageSource = messages.properties in src/main/resources
+		LocalValidatorFactoryBean validatorFactoryBean = new LocalValidatorFactoryBean();
+		validatorFactoryBean.setValidationMessageSource(messageSource);
+		return validatorFactoryBean;
 	}
 
 	@Bean

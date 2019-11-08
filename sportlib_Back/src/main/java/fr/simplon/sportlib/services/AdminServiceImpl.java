@@ -14,16 +14,16 @@ public class AdminServiceImpl implements AdminService {
     };
 
     @Override
-    public void clearCacheCity(String zipCode) {
-        cacheManager.getCache(zipCode).clear();
+    public void clearCacheStructure(String structure) {
+        cacheManager.getCache(structure).clear();
     };
 
     @Override
-    public void clearCacheCities() {
-        /* iterer la liste des villes */
-        Collection<String> cityNames = cacheManager.getCacheNames();
-        for (String cityName : cityNames) {
-            cacheManager.getCache(cityName).clear();
+    public void clearCacheStructures() {
+        /* loop on list of structures */
+        Collection<String> structureNames = cacheManager.getCacheNames();
+        for (String structureName : structureNames) {
+            cacheManager.getCache(structureName).clear();
         }
     }
 }

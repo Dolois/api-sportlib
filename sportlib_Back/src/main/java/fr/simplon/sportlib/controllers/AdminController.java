@@ -16,13 +16,13 @@ public class AdminController {
         this.service = service;
     }
 
-    @DeleteMapping("/cache/{city}")
-    protected void clearCacheCity(@PathVariable("city") String city) {
-        service.clearCacheCity(city);
+    @DeleteMapping("/cache/{structure}")
+    protected void clearCacheStructure(@PathVariable("structure") String structure) {
+        service.clearCacheStructure(structure);
     }
 
-    @DeleteMapping("/cities")
-    protected void  clearCacheCities() {
-        service.clearCacheCities();
+    @DeleteMapping("/structures")
+    protected void  clearCacheStructure() {
+        service.clearCacheStructures();
     }
 }

@@ -7,7 +7,7 @@ public interface AdminService {
 
     /** method signatures and arguments if present */
 
-    public void clearCacheCities();
+    public void clearCacheStructures();
 
-    public void clearCacheCity(String zipCode);
+    public void clearCacheStructure(String structure);
 }

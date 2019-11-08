@@ -2,9 +2,9 @@ package fr.simplon.sportlib.services;
 
 import fr.simplon.sportlib.dtos.PlaceDto;
 import fr.simplon.sportlib.dtos.PlaceViewDto;
-import fr.simplon.sportlib.entities.City;
+import fr.simplon.sportlib.entities.Structure;
 import fr.simplon.sportlib.entities.Place;
-import fr.simplon.sportlib.repositories.CityRepository;
+import fr.simplon.sportlib.repositories.StructureRepository;
 import fr.simplon.sportlib.repositories.PlaceRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
@@ -12,15 +12,15 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class PlaceServiceImpl extends AbstractService implements PlaceService, CityService {
+public class PlaceServiceImpl extends AbstractService implements PlaceService, StructureService {
 
     private final PlaceRepository repo;
-    private final CityRepository cityRepository;
+    private final StructureRepository structureRepository;
     private final ModelMapper modelMapper;
 
-    protected PlaceServiceImpl(PlaceRepository repo, CityRepository cityRepository, ModelMapper modelMapper) {
+    protected PlaceServiceImpl(PlaceRepository repo, StructureRepository structureRepository, ModelMapper modelMapper) {
         this.repo = repo;
-        this.cityRepository = cityRepository;
+        this.structureRepository = structureRepository;
         this.modelMapper = modelMapper;
     }
 
@@ -53,7 +53,7 @@ public class PlaceServiceImpl extends AbstractService implements PlaceService, C
     }
 
     @Override
-    public List<City> getAllCities() {
-        return cityRepository.findAll();
+    public List<Structure> getAllStructures() {
+        return structureRepository.findAll();
     }
 }

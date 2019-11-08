@@ -1,16 +1,14 @@
 package fr.simplon.sportlib.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import org.hibernate.annotations.CreationTimestamp;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Table(name="t_place")
-@JsonIgnoreProperties(value = {"createdAt", "updatedAt"}, allowGetters = true)
 public class Place extends AbstractEntity {
 
     /** The place. */
@@ -47,8 +45,11 @@ public class Place extends AbstractEntity {
 
     /** The date place. */
     @Column(nullable = false)
-    @CreationTimestamp
     private LocalDate datePlace;
+
+    /** The activities. */
+    @OneToMany(mappedBy = "place")
+    private List<Activity> activities;
 
     /**
      * Instantiates a new place.
@@ -125,5 +126,23 @@ public class Place extends AbstractEntity {
 
     public void setDatePlace(LocalDate datePlace) {
         this.datePlace = datePlace;
+    }
+
+    /**
+     * Gets the activities.
+     *
+     * @return the activities
+     */
+    public List<Activity> getActivities() {
+        return activities;
+    }
+
+    /**
+     * Sets the activities.
+     *
+     * @param activities the new activities
+     */
+    public void setActivities(List<Activity> activities) {
+        this.activities = activities;
     }
 }

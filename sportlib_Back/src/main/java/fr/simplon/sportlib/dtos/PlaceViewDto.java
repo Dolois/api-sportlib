@@ -1,6 +1,9 @@
 package fr.simplon.sportlib.dtos;
 
+import fr.simplon.sportlib.entities.Activity;
+
 import java.time.LocalDate;
+import java.util.List;
 
 public interface PlaceViewDto {
     Long getId();
@@ -12,4 +15,5 @@ public interface PlaceViewDto {
     String getPhone();
     String getImage();
     LocalDate getDatePlace();
+    List<Activity> getActivities();
 }
