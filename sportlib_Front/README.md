@@ -1,6 +1,6 @@
 # sportlib-front
 
-Front best practices :
+## Front best practices :
   - Typescript  
   - jest  
   - enzyme  
